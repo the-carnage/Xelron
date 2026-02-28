@@ -1,0 +1,17 @@
+[
+  {
+    "hostname": "web-server-01",
+    "server_ip": "192.168.1.10",
+    "role": "frontend"
+  },
+  {
+    "hostname": "db-server-01",
+    "server_ip": "10.0.0.51",
+    "role": "database"
+  },
+  {
+    "hostname": "cache-server-01",
+    "server_ip": "172.16.0.100",
+    "role": "cache"
+  }
+]
