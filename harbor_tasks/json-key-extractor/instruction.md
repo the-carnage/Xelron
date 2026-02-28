@@ -1,0 +1,2 @@
+Read the input file at `/app/input.json`. It contains an array of objects representing server configurations.
+Your task is to extract the `server_ip` from the object where `"hostname"` is `"db-server-01"` and save this IP address as a plain string to the output file at `/app/output.txt`. Do not include quotes or newlines unless specified. Note that the output should just be the raw string IP address.
