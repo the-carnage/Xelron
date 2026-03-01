@@ -2,16 +2,153 @@
   {
     "hostname": "web-server-01",
     "server_ip": "192.168.1.10",
-    "role": "frontend"
+    "role": "frontend",
+    "datacenter": "us-east-1",
+    "status": "active",
+    "config": {
+      "ports": [80, 443],
+      "ssl_enabled": true,
+      "max_connections": 1000
+    },
+    "metrics": {
+      "cpu_usage_percent": 45.2,
+      "memory_usage_percent": 62.1,
+      "disk_usage_percent": 55.0,
+      "uptime_hours": 720
+    },
+    "tags": ["production", "web", "critical"]
+  },
+  {
+    "hostname": "web-server-02",
+    "server_ip": "192.168.1.11",
+    "role": "frontend",
+    "datacenter": "us-east-1",
+    "status": "active",
+    "config": {
+      "ports": [80, 443],
+      "ssl_enabled": true,
+      "max_connections": 1500
+    },
+    "metrics": {
+      "cpu_usage_percent": 38.7,
+      "memory_usage_percent": 55.3,
+      "disk_usage_percent": 42.0,
+      "uptime_hours": 680
+    },
+    "tags": ["production", "web"]
   },
   {
     "hostname": "db-server-01",
     "server_ip": "10.0.0.51",
-    "role": "database"
+    "role": "database",
+    "datacenter": "us-east-1",
+    "status": "active",
+    "config": {
+      "ports": [5432],
+      "ssl_enabled": true,
+      "max_connections": 500
+    },
+    "metrics": {
+      "cpu_usage_percent": 72.5,
+      "memory_usage_percent": 85.3,
+      "disk_usage_percent": 68.0,
+      "uptime_hours": 1440
+    },
+    "tags": ["production", "database", "critical"]
+  },
+  {
+    "hostname": "db-server-02",
+    "server_ip": "10.0.0.52",
+    "role": "database",
+    "datacenter": "us-west-2",
+    "status": "maintenance",
+    "config": {
+      "ports": [5432],
+      "ssl_enabled": false,
+      "max_connections": 500
+    },
+    "metrics": {
+      "cpu_usage_percent": 12.0,
+      "memory_usage_percent": 30.5,
+      "disk_usage_percent": 45.0,
+      "uptime_hours": 48
+    },
+    "tags": ["staging", "database"]
   },
   {
     "hostname": "cache-server-01",
     "server_ip": "172.16.0.100",
-    "role": "cache"
+    "role": "cache",
+    "datacenter": "us-east-1",
+    "status": "active",
+    "config": {
+      "ports": [6379],
+      "ssl_enabled": false,
+      "max_connections": 2000
+    },
+    "metrics": {
+      "cpu_usage_percent": 25.0,
+      "memory_usage_percent": 90.2,
+      "disk_usage_percent": 15.0,
+      "uptime_hours": 2160
+    },
+    "tags": ["production", "cache"]
+  },
+  {
+    "hostname": "api-server-01",
+    "server_ip": "192.168.2.20",
+    "role": "backend",
+    "datacenter": "us-west-2",
+    "status": "active",
+    "config": {
+      "ports": [8080, 8443],
+      "ssl_enabled": true,
+      "max_connections": 3000
+    },
+    "metrics": {
+      "cpu_usage_percent": 58.9,
+      "memory_usage_percent": 71.4,
+      "disk_usage_percent": 38.0,
+      "uptime_hours": 960
+    },
+    "tags": ["production", "api", "critical"]
+  },
+  {
+    "hostname": "api-server-02",
+    "server_ip": "192.168.2.21",
+    "role": "backend",
+    "datacenter": "us-west-2",
+    "status": "active",
+    "config": {
+      "ports": [8080, 8443],
+      "ssl_enabled": true,
+      "max_connections": 3000
+    },
+    "metrics": {
+      "cpu_usage_percent": 63.1,
+      "memory_usage_percent": 68.7,
+      "disk_usage_percent": 41.0,
+      "uptime_hours": 840
+    },
+    "tags": ["production", "api"]
+  },
+  {
+    "hostname": "monitor-server-01",
+    "server_ip": "10.10.0.5",
+    "role": "monitoring",
+    "datacenter": "us-east-1",
+    "status": "active",
+    "config": {
+      "ports": [9090, 3000],
+      "ssl_enabled": true,
+      "max_connections": 100
+    },
+    "metrics": {
+      "cpu_usage_percent": 15.3,
+      "memory_usage_percent": 42.8,
+      "disk_usage_percent": 72.0,
+      "uptime_hours": 4320
+    },
+    "tags": ["production", "monitoring"]
   }
 ]
