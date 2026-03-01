@@ -52,11 +52,11 @@ uvx ruff check harbor_tasks/json-key-extractor
 
 ## Test Results
 
-| Test    | Expected | Result |
-|---------|----------|--------|
-| Oracle  | 1.0      | 1.0    |
-| NOP     | 0.0      | 0.0    |
-| Ruff    | Pass     | Pass   |
+| Test   | Expected | Result |
+| ------ | -------- | ------ |
+| Oracle | 1.0      | 1.0    |
+| NOP    | 0.0      | 0.0    |
+| Ruff   | Pass     | Pass   |
 
 ## Author
 
